@@ -40,7 +40,7 @@ public class PlayerTest  extends TestCase {
 	@Test
 	public void testCheckUser() {
 		
-		assertTrue(playerDAO.CheckUser("m0trab01", "Spring2017").getFirst_name().equals("Mohamed"));
+		assertTrue(playerDAO.CheckUser("username", "password").getFirst_name().equals("firstname"));
 	}
 	
 	//public void testListPlayersOfClub() {

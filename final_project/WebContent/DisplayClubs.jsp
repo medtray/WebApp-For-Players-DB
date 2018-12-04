@@ -13,10 +13,10 @@
     <sql:setDataSource
     var="myDS"
         driver = "com.ibm.db2.jcc.DB2Driver"
-        user = "m0trab01"
-        password = "Spring2017"
+        user = ""
+        password = ""
         
-        url = "jdbc:db2://216.249.138.85:50000/m0trab01"
+        url = ""
     />
      
     <sql:query var="listUsers"   dataSource="${myDS}">

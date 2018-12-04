@@ -32,7 +32,7 @@ public class GetInfoCountryByClub extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
     	Connection connection = null;
-        ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+        ConnectionPool pool = ConnectionPool.getInstance("database");
         connection = pool.getConnection();
         
         String club = request.getParameter("club");

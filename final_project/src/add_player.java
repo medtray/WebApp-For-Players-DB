@@ -36,7 +36,7 @@ public class add_player extends HttpServlet {
  
         try {
         	
-            ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+            ConnectionPool pool = ConnectionPool.getInstance("database");
             con = pool.getConnection();
             String query = "SELECT * FROM PLAYER";
             System.out.println("houni1");

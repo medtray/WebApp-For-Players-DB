@@ -45,7 +45,7 @@ public class PlayerDAOImpl implements PlayerDao {
     {
         Connection connection;
         Class.forName("com.ibm.db2.jcc.DB2Driver");
-        connection = DriverManager.getConnection("jdbc:db2://216.249.138.85:50000/m0trab01", "m0trab01", "Spring2017");
+        connection = DriverManager.getConnection("jdbc:db2://216.249.138.85:50000/name", "name", "password");
         System.out.println("hani d5alt");
         return connection;
     }

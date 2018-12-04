@@ -26,7 +26,7 @@ public class DeleteUser extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
     	Connection connection = null;
-        ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+        ConnectionPool pool = ConnectionPool.getInstance("database");
         connection = pool.getConnection();
         String userName = request.getParameter("id");
         String password = request.getParameter("password");

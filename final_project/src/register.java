@@ -31,7 +31,7 @@ public class register extends HttpServlet {
  
         try {
         	String sqlStatement = request.getParameter("sqlStatement");
-            ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+            ConnectionPool pool = ConnectionPool.getInstance("database");
             con = pool.getConnection();
             
             PreparedStatement ps = con

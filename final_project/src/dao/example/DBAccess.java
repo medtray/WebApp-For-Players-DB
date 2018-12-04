@@ -16,10 +16,10 @@ public class DBAccess {
 	
 	public void initializeVariables(){
         driver = "com.ibm.db2.jcc.DB2Driver";
-        dbName = "m0trab01";
-        userId = "m0trab01";
-        password = "Spring2017";
-        url = "jdbc:db2://216.249.138.85:50000/"+dbName;
+        dbName = "";
+        userId = "";
+        password = "";
+        url = "jdbc:db2://127.0.0.1:50000/"+dbName;
     }
 	
 	private void establishDBConnection(){

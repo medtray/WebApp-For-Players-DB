@@ -26,7 +26,7 @@ public class SqlProcessingServlet extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
         String sqlStatement = request.getParameter("sqlStatement");
-        ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+        ConnectionPool pool = ConnectionPool.getInstance("");
         connection = pool.getConnection();
         parseAndExecute(sqlStatement, connection);
         pool.freeConnection(connection);

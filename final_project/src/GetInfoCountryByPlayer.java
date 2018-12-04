@@ -32,7 +32,7 @@ public class GetInfoCountryByPlayer extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
     	Connection connection = null;
-        ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+        ConnectionPool pool = ConnectionPool.getInstance("database");
         connection = pool.getConnection();
         String first_name = request.getParameter("first_name");
         String second_name = request.getParameter("second_name");

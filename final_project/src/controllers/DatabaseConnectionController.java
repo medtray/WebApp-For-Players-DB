@@ -24,10 +24,10 @@ public class DatabaseConnectionController
     public void initializeDBConnectionParameters()
     {
         driver = "com.ibm.db2.jcc.DB2Driver";
-        userId = "m0trab01";
-        password = "Spring2017";
-        host = "jdbc:db2://216.249.138.85:50000/";
-        url = "jdbc:db2://216.249.138.85:50000/m0trab01";
+        userId = "";
+        password = "";
+        host = "";
+        url = "";
     }
     public void establishDBConnection()
     {

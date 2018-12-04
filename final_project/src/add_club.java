@@ -34,7 +34,7 @@ public class add_club extends HttpServlet {
  
         try {
         	
-            ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+            ConnectionPool pool = ConnectionPool.getInstance("database");
             con = pool.getConnection();
             
 

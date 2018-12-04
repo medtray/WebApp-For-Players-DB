@@ -47,7 +47,7 @@ public class UsersDropDownServlet extends HttpServlet
         // out.println("<input type=hidden name = \"mem_id\" velue = \"\">");
         out.println("<table cellpadding=\"5\" border=\"2\">");
         out.println("<tr>");
-        DatabaseConnectionController dbCC = new DatabaseConnectionController("m0trab01");
+        DatabaseConnectionController dbCC = new DatabaseConnectionController("database");
         dbCC.establishDBConnection();
         UsersController Ucc = new UsersController(dbCC.getDbConnection());
         ResultSet rs = Ucc.getUsersList();

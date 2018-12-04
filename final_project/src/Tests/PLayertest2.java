@@ -25,7 +25,7 @@ public class PLayertest2 {
 	
 	@Test
 	public void checkGetUser1() {
-		assertTrue(libraryDAO.GetUser("Mahdi", "1357").getId().compareTo("Moalla")==0);
+		assertTrue(libraryDAO.GetUser("username", "password").getId().compareTo("id")==0);
 	}
 	
 	

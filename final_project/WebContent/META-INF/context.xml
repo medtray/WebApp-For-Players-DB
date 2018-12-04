@@ -33,11 +33,11 @@
     -->
    
 		
-		<Resource  name="m0trab01" 
-            username="m0trab01" 
-            password="Spring2017" 
+		<Resource  name="" 
+            username="" 
+            password="" 
             driverClassName="com.ibm.db2.jcc.DB2Driver"
-            url="jdbc:db2://216.249.138.85:50000/m0trab01"
+            url="jdbc:db2://127.0.0.1:50000/username"
             auth="Container" 
             type="javax.sql.DataSource"
             maxActive="100" 

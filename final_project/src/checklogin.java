@@ -50,7 +50,7 @@ public class checklogin extends HttpServlet
     {
         boolean rc = false;
         Connection connection = null;
-        ConnectionPool pool = ConnectionPool.getInstance("m0trab01");
+        ConnectionPool pool = ConnectionPool.getInstance("database");
         connection = pool.getConnection();
         UsersController Ucc = new UsersController(connection);
         if (Ucc.findUser(userId, password))
